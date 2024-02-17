@@ -1,20 +1,25 @@
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-// In App.js or in your Navigation component
-<nav>
-  <NavLink to="/" exact activeClassName="active">
-    Home
-  </NavLink>
-  <NavLink to="/projects" activeClassName="active">
-    Projects
-  </NavLink>
-  <NavLink to="/blog" activeClassName="active">
-    Blog
-  </NavLink>
-  <NavLink to="/contacts" activeClassName="active">
-    Contacts
-  </NavLink>
-  <NavLink to="/about" activeClassName="active">
-    About
-  </NavLink>
-</nav>
+const NavigationBar = () => {
+  return (
+    <Navbar bg="light" expand="lg" className="navbar-custom">
+      <Navbar.Collapse className="flex-grow-1">
+        <Navbar.Brand href="/" className="me-3 mx-4">
+          Kevin Raj Karki
+        </Navbar.Brand>
+        <Nav className="me-4 ms-auto">
+          <Nav.Link href="/mainpage">Home</Nav.Link>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+          <NavDropdown title="More" id="basic-nav-dropdown">
+            <NavDropdown.Item href="/about">About</NavDropdown.Item>
+            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+            <NavDropdown.Item href="/blogs">Blogs</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
+
+export default NavigationBar;

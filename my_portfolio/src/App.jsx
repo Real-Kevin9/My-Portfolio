@@ -1,21 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Note the corrected import statement
 import MainPage from './components/MainPage';
 import About from './components/About';
 import Contacts from './components/Contacts';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
+import NavigationBar from './components/Navigation';
 
-const Routes = () => (
-  <Router>
-    <Routes>
-      <Route exact path="/" component={MainPage} />
-      <Route path="/About" component={About} />
-      <Route path="/Contacts" component={Contacts} />
-      <Route path="/Projects" component={Projects} />
-      <Route path="/Blog" component={Blog} />
-    </Routes>
-  </Router>
-);
+const Routers = () => {
+  return (
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/mainpage" element={<MainPage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contacts />} />
+        <Route path="/blogs" element={<Blog />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default Routes;
+export default Routers;
