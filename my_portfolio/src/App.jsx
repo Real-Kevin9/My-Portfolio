@@ -6,6 +6,7 @@ import Contacts from './components/Contacts';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import NavigationBar from './components/Navigation';
+import Footer from './components/Footer';
 
 const Routers = () => {
   return (
@@ -18,6 +19,7 @@ const Routers = () => {
         <Route path="/contact" element={<Contacts />} />
         <Route path="/skills" element={<Skills />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

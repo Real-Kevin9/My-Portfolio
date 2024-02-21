@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 const CountryCode = {
   '': 'Select Country Code',
@@ -38,12 +39,12 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="container" style={{background: 'linear-gradient(to right, #213a5c, #0e2038, #213a5c)'}}>
+    <Container fluid style={{ background: 'linear-gradient(to right, #213a5c, #0e2038, #213a5c)', minHeight: '92.3vh' }}>
       <div className="row justify-content-center">
-        <div className="col-md-8 mt-4">
+        <div className="col-md-8 mt-5">
           <div className="card">
             <div className="card-header">
-              <h1 className="mb-0">Contact Me</h1>
+              <h1>Contact Me</h1>
             </div>
             <div className="card-body">
               <form onSubmit={handleSubmit}>
@@ -106,38 +107,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-      <div className="row justify-content-center mt-5">
-        <div className="col-md-8">
-          <div className="card">
-            <div className="card-header">
-              <h1 className="mb-0">Contact Information</h1>
-            </div>
-            <div className="card-body">
-              <p>
-                <a href="mailto:kevinrajkarki97@gmail.com">
-                  <img src= "./img.svg" alt="Email" /> kevinrajkarki97@gmail.com
-                </a>
-              </p>
-              <p>
-                <a href="tel:+977-981-8546347">
-                  <img src="./img.svg" alt="Phone" /> +977-981-8546347
-                </a>
-              </p>
-              <p>
-                <a href="https://github.com/Real-Kevin9">
-                  <img src="./assets/github.svg" alt="GitHub" />
-                </a>
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/in/kevinrajkarki/in">
-                  <img src="./assets/linkedin" alt="LinkedIn" />
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </Container>
   );
 };
 

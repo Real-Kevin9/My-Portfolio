@@ -11,7 +11,7 @@ import About from "./components/About";
 const RoutesComponent = () => {
   return (
     <>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/mainpage" element={<MainPage />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contacts" element={<Contacts />} />
