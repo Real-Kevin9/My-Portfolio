@@ -9,4 +9,6 @@
   color: rgba(46, 46, 46, 1);
 }
 
-
+.App{
+  background-image: linear-gradient(to right, #213a5c, #0e2038, #213a5c);
+}

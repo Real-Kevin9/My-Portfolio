@@ -1,23 +1,34 @@
-import React from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import { GiHamburgerMenu } from 'react-icons/gi'; // Import hamburger icon from React Icons
+import ".//Navigation.css"
 
 const NavigationBar = () => {
+  const [expanded, setExpanded] = useState(false); // State for managing collapse/expand
+
   return (
     <Navbar bg="light" expand="lg" className="navbar-custom">
-      <Navbar.Collapse className="flex-grow-1">
-        <Navbar.Brand href="/" className="me-3 mx-4">
-          Kevin Raj Karki
-        </Navbar.Brand>
-        <Nav className="me-4 ms-auto">
+      <Navbar.Brand className="me-3 mx-5 fw-bolder fst-italic fs-4">
+        K
+      </Navbar.Brand>
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        onClick={() => setExpanded(!expanded)} // Toggle collapse/expand on click
+      >
+        <GiHamburgerMenu /> {/* Hamburger icon */}
+      </Navbar.Toggle>
+      <Navbar.Collapse id="responsive-navbar-nav" className="flex-grow-1" expanded={expanded}>
+        <Nav className="mx-auto">
           <Nav.Link href="/mainpage">Home</Nav.Link>
+          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="/skills">Skills</Nav.Link>
           <Nav.Link href="/projects">Projects</Nav.Link>
-          <NavDropdown title="More" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/about">About</NavDropdown.Item>
-            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
-            <NavDropdown.Item href="/blogs">Blogs</NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
+      <Navbar.Brand className="me-3">
+        Rate Me
+      </Navbar.Brand>
     </Navbar>
   );
 };

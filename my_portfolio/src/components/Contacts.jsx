@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CountryCode = {
+  '': 'Select Country Code',
   '+1': 'United States',
   '+44': 'United Kingdom',
   '+61': 'Australia',
@@ -12,7 +13,7 @@ const CountryCode = {
 const ContactMe = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [countryCode, setCountryCode] = useState('+1');
+  const [countryCode, setCountryCode] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
@@ -37,9 +38,9 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container" style={{background: 'linear-gradient(to right, #213a5c, #0e2038, #213a5c)'}}>
       <div className="row justify-content-center">
-        <div className="col-md-8">
+        <div className="col-md-8 mt-4">
           <div className="card">
             <div className="card-header">
               <h1 className="mb-0">Contact Me</h1>
@@ -114,12 +115,12 @@ const ContactMe = () => {
             <div className="card-body">
               <p>
                 <a href="mailto:kevinrajkarki97@gmail.com">
-                  <img src="./assets/mail.svg" alt="Email" /> kevinrajkarki97@gmail.com
+                  <img src= "./img.svg" alt="Email" /> kevinrajkarki97@gmail.com
                 </a>
               </p>
               <p>
                 <a href="tel:+977-981-8546347">
-                  <img src="./assets/phone.svg" alt="Phone" /> +977-981-8546347
+                  <img src="./img.svg" alt="Phone" /> +977-981-8546347
                 </a>
               </p>
               <p>

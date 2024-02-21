@@ -1,10 +1,10 @@
 /* Navigation bar custom styles */
 .navbar-custom {
-  background-image: linear-gradient(to right, #6c5ce7, #fd79a8);
+  background-image: linear-gradient(to right, #213a5c, #0e2038, #213a5c);
 }
 
 .navbar-custom .navbar-brand {
-  color: #2E2E2E;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -12,41 +12,4 @@
   color: #ffffff;
   padding: 0.5rem 1rem;
   transition: all 0.2s ease-in-out;
-}
-
-.navbar-custom .navbar-nav .nav-link:hover {
-  background-color: rgba(46, 46, 46, 1);
-}
-
-.navbar-custom .navbar-nav .nav-link.active,
-.navbar-custom .navbar-nav .nav-link:focus,
-.navbar-custom .navbar-nav .nav-link:focus-visible {
-  background-color: rgba(46, 46, 46, 1);
-}
-
-.navbar-custom .navbar-nav .nav-link.disabled {
-  color: rgba(46, 46, 46, 1);
-  pointer-events: none;
-}
-
-/* Navbar dropdown custom styles */
-.navbar-custom .dropdown-item {
-  color: #FFF8E7;
-  padding: 0.25rem 1.5rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus,
-.navbar-custom .dropdown-item:focus-visible {
-  background-color: rgba(245, 245, 220, 1);
-}
-
-.navbar-custom .dropdown-item.active {
-  background-color: rgba(255, 248, 231, 1);
-}
-
-.navbar-custom .dropdown-item.disabled {
-  color: rgba(255, 255, 255, 0.5);
-  pointer-events: none;
 }
