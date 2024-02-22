@@ -72,13 +72,13 @@ const ContactMe = () => {
                   <div className="col-auto">
                     <select
                       className="form-select text-white"
-                      style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)'}}
+                      style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', color: 'white' }} // Apply background color to the select dropdown
                       id="countryCode"
                       value={countryCode}
                       onChange={(e) => setCountryCode(e.target.value)}
                     >
                       {Object.entries(CountryCode).map(([code, name]) => (
-                        <option key={code} value={code}>{name}</option>
+                        <option key={code} value={code} style={{ background: '#0e2038', color: 'white' }}>{name}</option> // Apply background color to each option
                       ))}
                     </select>
                   </div>
