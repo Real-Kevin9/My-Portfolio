@@ -1,5 +1,16 @@
-.fluid {
-    background-image: linear-gradient(to right, #213a5c, #0e2038, #213a5c);
-    min-height: 92.4vh;
+.floating-img {
+    animation: float 3s infinite; /* Apply the float animation infinitely */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to initial position */
+    }
   }
   

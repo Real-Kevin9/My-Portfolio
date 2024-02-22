@@ -12,7 +12,7 @@ const Skills = () => {
   ];
 
   return (
-    <div style={{ background: 'linear-gradient(to right, #213a5c, #0e2038, #213a5c)', minHeight: '92.3vh' }}>
+    <div style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '92.3vh' }}>
       <Container className="skills-container text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
         <Row>
           {skills.map((skill, index) => (
@@ -27,7 +27,7 @@ const Skills = () => {
           ))}
         </Row>
       </Container>
-      <h2 className='mx-auto text-white '>Available For Freelancer !</h2>
+      {/* <h2 className='mx-auto text-white '>Available For Freelancer !</h2> */}
     </div>
   );
 };

@@ -8,7 +8,7 @@ const CountryCode = {
   '+44': 'United Kingdom',
   '+61': 'Australia',
   '+977': 'Nepal',
-  // Add more country codes as needed
+  '+91': 'India',
 };
 
 const ContactMe = () => {
@@ -39,20 +39,20 @@ const ContactMe = () => {
   };
 
   return (
-    <Container fluid style={{ background: 'linear-gradient(to right, #213a5c, #0e2038, #213a5c)', minHeight: '92.3vh' }}>
+    <Container fluid style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '92.3vh' }}>
       <div className="row justify-content-center">
         <div className="col-md-8 mt-5">
           <div className="card">
-            <div className="card-header">
-              <h1>Contact Me</h1>
+            <div className="card-header" style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)'}}>
+              <h1 className='text-white'>Contact Me</h1>
             </div>
-            <div className="card-body">
+            <div className="card-body text-white" style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)'}}>
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <label htmlFor="email" className="form-label">Email address</label>
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control text-white" style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)'}}
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -65,7 +65,7 @@ const ContactMe = () => {
                   </div>
                   <div className="col-auto">
                     <select
-                      className="form-select"
+                      className="form-select text-white" style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)'}}
                       id="countryCode"
                       value={countryCode}
                       onChange={(e) => setCountryCode(e.target.value)}
@@ -81,7 +81,7 @@ const ContactMe = () => {
                   <div className="col-auto">
                     <input
                       type="tel"
-                      className="form-control"
+                      className="form-control text-white" style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)'}}
                       id="phoneNumber"
                       value={phoneNumber}
                       onChange={(e) => setPhoneNumber(e.target.value)}
@@ -89,10 +89,16 @@ const ContactMe = () => {
                     />
                   </div>
                 </div>
-                <div className="mb-3">
-                  <label htmlFor="message" className="form-label">Message</label>
+                <div className="mb-3" style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', padding: '10px', borderRadius: '5px' }}>
+                  <label htmlFor="message" className="form-label text-white">Message</label>
                   <textarea
                     className="form-control"
+                    style={{ 
+                      backgroundColor: 'transparent', // Make textarea background transparent
+                      color: 'white', // Ensure text color is white
+                      border: '1px solid #ced4da', // Add a border for better visibility
+                      width: '100%', // Ensure the textarea takes up full width
+                    }}
                     id="message"
                     rows="5"
                     value={message}
@@ -100,8 +106,9 @@ const ContactMe = () => {
                     required
                   ></textarea>
                 </div>
+
                 {status && <p>{status}</p>}
-                <button type="submit" className="btn btn-primary btn-lg" style={{ backgroundColor: '#2E2E2E' }}>Send</button>
+                <button type="submit" className="btn btn-primary btn-lg fw-bold" style={{ backgroundColor: '#2E2E2E' }}>Send</button>
               </form>
             </div>
           </div>

@@ -13,7 +13,7 @@ const Routers = () => {
     <Router>
       <NavigationBar />
       <Routes>
-        <Route path="/mainpage" element={<MainPage />} />
+        <Route exact path="/" element={<MainPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contacts />} />
