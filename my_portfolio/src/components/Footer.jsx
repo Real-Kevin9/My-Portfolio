@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-md-start mb-4 mb-md-0">
-                            <p style={{ fontSize: '14px', margin: 0 }}>&copy; {new Date().getFullYear()} Kevin Raj Karki | All Rights Reserved</p>
+                            <p style={{ fontSize: '14px', margin: 50 }}>&copy; {new Date().getFullYear()} Kevin Raj Karki | All Rights Reserved</p>
                         </div>
                         <div className="col-md-6 text-md-end">
                             <h5 style={{ fontSize: '14px' }}>Contact Us</h5>
