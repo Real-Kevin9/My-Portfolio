@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { GiHamburgerMenu } from 'react-icons/gi'; // Import hamburger icon from React Icons
+import { GiHamburgerMenu } from 'react-icons/gi';
 import ".//Navigation.css"
 
 const NavigationBar = () => {
