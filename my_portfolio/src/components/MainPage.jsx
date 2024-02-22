@@ -23,10 +23,10 @@ const MainPage = () => {
           <img src={animated} alt="me" className="img-fluid floating-img" style={{ width: '50%', maxWidth: '300px', marginRight: '2rem' }} />
         </Col>
         <Col lg={6} className="text-center text-lg-start">
-          <div className="hero_title1 fw-bold mb-4" style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>
+          <div className="hero_title1 fw-bold mb-2" style={{ color: 'white', fontSize: '2rem', marginBottom: '1rem' }}>
             Hello, It`s me
           </div>
-          <div className="hero_title2 fw-bold mb-4 text-white" style={{ fontSize: '2rem', marginBottom: '1rem'}}>
+          <div className="hero_title2 fw-bold mb-4 text-white" style={{ fontSize: '2.5rem', marginBottom: '1rem'}}>
             Kevin Raj Karki
           </div>
           <Link to="/about">

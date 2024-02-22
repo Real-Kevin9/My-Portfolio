@@ -20,23 +20,28 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     // Validate the form data
     if (!email || !phoneNumber || !countryCode || !message) {
       setStatus('Please fill in all fields.');
       return;
     }
-
-    // Send the form data to a server or email service
-    console.log(`Email: ${email}\nPhone Number: ${phoneNumber}\nCountry Code: ${countryCode}\nMessage: ${message}`);
-
-    // Reset the form fields
+  
+    // Log the form data
+    console.log('Form Data:', {
+      email,
+      phoneNumber,
+      countryCode,
+      message
+    });
+  
+    // Reset the form fields and status
     setEmail('');
     setPhoneNumber('');
     setCountryCode('');
     setMessage('');
     setStatus('');
-  };
+  };  
 
   return (
     <Container fluid style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '100vh' }}>
