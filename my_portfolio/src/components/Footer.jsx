@@ -1,5 +1,6 @@
 import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
                             <p style={{ fontSize: '14px', margin: 50 }}>&copy; {new Date().getFullYear()} Kevin Raj Karki | All Rights Reserved</p>
                         </div>
                         <div className="col-md-6 text-md-end">
-                            <h5 style={{ fontSize: '14px' }}>Contact Us</h5>
+                            <Link to="/contact"><h5 style={{ fontSize: '14px' }}>Contact Me</h5></Link>
                             <p style={{ fontSize: '14px' }}> <FaMapMarkerAlt /> Kathmandu, Nepal</p>
                             <p style={{ fontSize: '14px' }}> <FaEnvelope /> Email: kevinrajkarki97@gmail.com</p>
                             <p style={{ fontSize: '14px' }}> <FaPhone /> Phone: +977-981-8546347</p>
