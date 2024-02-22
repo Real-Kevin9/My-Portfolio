@@ -16,7 +16,7 @@ const Skills = () => {
       <Container className="skills-container text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
         <Row>
           {skills.map((skill, index) => (
-            <Col key={index} xs={6} md={6} className="skill-item" style={{ marginBottom: '4rem' }}>
+            <Col key={index} xs={12} sm={6} md={4} lg={3} className="skill-item" style={{ marginBottom: '4rem' }}>
               <h5 style={{ marginTop: '3rem', marginBottom: '0.25rem' }}>{skill.name}</h5>
               <div className="progress" style={{ height: '20px', position: 'relative' }}>
                 <div className="progress-bar" style={{ width: skill.level, backgroundColor: '#007bff', position: 'absolute', top: 0, left: 0, height: '100%' }}>
