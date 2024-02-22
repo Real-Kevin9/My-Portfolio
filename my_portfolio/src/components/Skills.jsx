@@ -12,7 +12,7 @@ const Skills = () => {
   ];
 
   return (
-    <div style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '92.3vh' }}>
+    <div style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '100vh' }}>
       <Container className="skills-container text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
         <Row>
           {skills.map((skill, index) => (

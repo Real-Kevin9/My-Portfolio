@@ -4,7 +4,7 @@ import { Card, Button } from "react-bootstrap";
 
 const Projects = () => {
   return (
-    <div style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '92.3vh' }}>
+    <div style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '100vh' }}>
       <div className="container py-5">
         <h1 className="text-center text-light mb-4">Projects</h1>
         <p className="text-center text-light mb-4">

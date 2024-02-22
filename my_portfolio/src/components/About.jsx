@@ -5,7 +5,7 @@ import Photo from '../images/Photo.png';
 
 function AboutMe() {
   return (
-    <Container fluid style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '92.3vh' }}>
+    <Container fluid style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '100vh' }}>
       <Container className="text-white">
         <Row>
           <Col md={8} className="offset-md-2">

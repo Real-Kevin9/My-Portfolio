@@ -39,7 +39,7 @@ const ContactMe = () => {
   };
 
   return (
-    <Container fluid style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '92.3vh' }}>
+    <Container fluid style={{ background: 'linear-gradient(to right, #0e2038, #213a5c, #0e2038)', minHeight: '100vh' }}>
       <Row className="justify-content-center">
         <Col md={8}>
           <div className="card mt-5">
