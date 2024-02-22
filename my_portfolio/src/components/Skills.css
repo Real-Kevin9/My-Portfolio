@@ -1,0 +1,21 @@
+.animated {
+    animation-duration: 1s;
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  /* Apply fade in animation */
+  .animate__fadeInUp {
+    animation-name: fadeInUp;
+  }
