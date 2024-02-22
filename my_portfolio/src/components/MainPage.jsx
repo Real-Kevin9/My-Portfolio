@@ -30,11 +30,11 @@ const MainPage = () => {
             Kevin Raj Karki
           </div>
           <Link to="/about">
-            <Button variant="light" className="fw-bold mb-4 me-lg-4" style={{color: '#0e2038', fontSize:'1rem'}}>
+            <Button variant="light" className="fw-bold mb-4 me-lg-5" style={{color: '#0e2038', fontSize:'1rem'}}>
               Learn More About Me
             </Button>
           </Link>
-          <Button variant="light" className="fw-bold mb-4 mt-3 mt-lg-0" style={{ backgroundColor: 'white', color: '#213a5c'}} onClick={handleDownload}>
+          <Button variant="light" className="fw-bold mb-4 mt-lg-0" style={{ backgroundColor: 'white', color: '#213a5c'}} onClick={handleDownload}>
             My CV
           </Button>
           <div className="d-flex justify-content-center justify-content-lg-start mt-5">
