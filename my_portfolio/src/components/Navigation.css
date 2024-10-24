@@ -1,15 +1,17 @@
-/* Navigation bar custom styles */
 .navbar-custom {
-  background-image: linear-gradient(to right, #213a5c, #0e2038, #213a5c);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Adjust shadow properties */
+  transition: box-shadow 0.3s ease; /* Optional: Add transition for smooth effect */
 }
 
 .navbar-custom .navbar-brand {
-  color: #ffffff;
-  font-weight: 600;
+  color: #333333; /* Dark Gray for brand name */
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  transition: all 0.2s ease-in-out;
+  color: #0E73DB; /* Deep Blue for links */
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #EDB50D; /* Soft Yellow for hover effect */
 }

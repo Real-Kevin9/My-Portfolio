@@ -1,14 +1,40 @@
+/* Light Mode */
+.light-mode {
+  --bg-color: #FFFFFF;
+  --text-color: rgba(46, 46, 46, 1);
+  --primary-color: #0E73DB;
+  --secondary-color: #EDB50D;
+  --link-color: #0E73DB;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #202020;
+  --text-color: #FFFFFF;
+  --primary-color: #EDB50D;
+  --secondary-color: #0E73DB;
+  --link-color: #EDB50D;
+}
+
+/* Apply theme colors */
+body, .navbar-custom, .container, .footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 .navbar-custom .navbar-nav .nav-link {
-  font-size: 1.2rem;
-  color: rgba(46, 46, 46, 1);
+  color: var(--text-color);
 }
 
-/* Increase the font size for navbar dropdown items */
-.navbar-custom .dropdown-item {
-  font-size: 1.1rem;
-  color: rgba(46, 46, 46, 1);
+a {
+  color: var(--link-color);
 }
 
-.App{
-  background-image: linear-gradient(to right, #213a5c, #0e2038, #213a5c);
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: var(--text-color);
 }
