@@ -4,10 +4,11 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import animated from '../images/animated.png';
 import './MainPage.css';
 import { Link } from "react-router-dom";
-import { ThemeContext } from './ThemeContext'; // Updated import
+import { ThemeContext } from './ThemeContext'; // Import ThemeContext
 
 const MainPage = () => {
-  const { theme } = useContext(ThemeContext); // Get the current theme
+  const { theme } = useContext(ThemeContext); // Access the current theme
+  const iconColor = theme === 'dark' ? 'white' : 'black'; // Set icon color based on theme
 
   const handleDownload = () => {
     try {
@@ -20,7 +21,6 @@ const MainPage = () => {
 
   return (
     <div className={`d-flex flex-column min-vh-100 ${theme}`}>
-      {/* Main content section */}
       <Container fluid className="flex-grow-1 d-flex align-items-center justify-content-center main-container">
         <Row className="justify-content-center align-items-center text-center text-lg-start">
           <Col lg={5} className="mb-4">
@@ -51,13 +51,13 @@ const MainPage = () => {
             </Button>
             <div className="social-icons mt-5">
               <a href="https://github.com/Real-Kevin9" target="_blank" rel="noopener noreferrer" className="me-4">
-                <FaGithub size="2.5em" color="white" />
+                <FaGithub size="2.5em" color={iconColor} />
               </a>
               <a href="https://linkedin.com/in/kevinrajkarki" target="_blank" rel="noopener noreferrer" className="me-4">
-                <FaLinkedin size="2.5em" color="white" />
+                <FaLinkedin size="2.5em" color={iconColor} />
               </a>
               <a href="https://twitter.com/KevinKarki97" target="_blank" rel="noopener noreferrer">
-                <FaTwitter size="2.5em" color="white" />
+                <FaTwitter size="2.5em" color={iconColor} />
               </a>
             </div>
           </Col>
