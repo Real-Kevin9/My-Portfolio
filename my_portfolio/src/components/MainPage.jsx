@@ -12,7 +12,7 @@ const MainPage = () => {
 
   const handleDownload = () => {
     try {
-      const cvUrl = 'https://drive.google.com/file/d/1CCJXXvsFshYQG5DSvxw6apKV8RknW2JQ/view?usp=sharing';
+      const cvUrl = 'https://drive.google.com/file/d/1w9fkEnqeId-J6zvy4OT9ZePpJjHnx-QS/view?usp=sharing';
       window.open(cvUrl, '_blank');
     } catch (error) {
       console.error('Error downloading CV:', error);
